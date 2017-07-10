@@ -18,6 +18,17 @@ allprojects {
     }
 }
 
+ext {
+    buildToolsVersion = "25.0.2"
+    supportLibVersion = "25.3.1"
+    MIN_SDK=16
+    TARGET_SDK=25
+    butterknifeVersion="8.7.0"
+    rxjavaVersion="2.0.2"
+    rxandroidVersion="2.0.1"
+
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

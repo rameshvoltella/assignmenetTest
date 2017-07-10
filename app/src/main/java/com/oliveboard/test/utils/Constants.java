@@ -6,6 +6,6 @@ package com.oliveboard.test.utils;
 
 public class Constants {
 //Constant infos
-    public static String BASE_URL="paste url here";
+    public static String BASE_URL="your url here";
     public static String BUNDLE_DATA="bundle.data";
 }
