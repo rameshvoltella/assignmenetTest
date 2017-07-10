@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--setting the ids-->
+    <item type="id" name="toolbar" />
+    <item type="id" name="tool_bar" />
+    <item type="id" name="tabs" />
+    <item type="id" name="viewpager" />
+    <item type="id" name="loading_view" />
+    <item type="id" name="message_view" />
+    <item type="id" name="reload_iv" />
+    <item type="id" name="description_tv" />
+
+    </resources>

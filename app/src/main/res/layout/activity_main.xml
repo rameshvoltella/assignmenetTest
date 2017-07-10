@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#dfdfdf"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/tool_bar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <include
+       layout="@layout/toolbar"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:elevation="@dimen/elevation"
+        app:tabMode="scrollable"
+        android:layout_alignParentStart="true" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+    <include
+        android:id="@id/loading_view"
+        layout="@layout/loading"/>
+        <include
+            android:id="@id/message_view"
+            android:visibility="gone"
+            layout="@layout/reload_layout"/>
+    </RelativeLayout>
+</RelativeLayout>

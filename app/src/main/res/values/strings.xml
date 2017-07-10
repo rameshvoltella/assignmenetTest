@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OliverBoard Test</string>
+    <string name="error_txt">Something went wrong \n reload to try again...</string>
+</resources>
