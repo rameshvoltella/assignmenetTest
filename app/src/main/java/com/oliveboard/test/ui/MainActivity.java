@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements MainViewCallback 
             /*Adding new Tabs and Course Description*/
             for (int i = 0; i < data.exams.size(); i++) {
                 /*Some times api can fail in any chance to avoid the index out of bound exception just checking size is >2*/
-                if(data.exams.get(i).size()>2) {
+                if(data.exams.get(i).size()>1) {
                     tabLayout.addTab(tabLayout.newTab().setText(data.exams.get(i).get(0)));
                     descriptionDataList.add(data.exams.get(i).get(1));
                 }
